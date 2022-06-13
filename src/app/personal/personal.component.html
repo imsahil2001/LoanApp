@@ -1,0 +1,39 @@
+<div class="big-container">
+  <br />
+
+  <h3 align="center">Personal Loan Application</h3>
+  <br />
+  <div class="containers">
+    <form action="" class="form">
+      <label for="">First Name</label> <br />
+      <input type="text" name="" id="" />
+      <br />
+      <label for="">Last Name</label> <br />
+      <input type="text" name="" id="" />
+      <br />
+      <label for="">Phone no</label> <br />
+      <input type="numeber" name="" id="" />
+      <br />
+      <label for="">Address</label> <br />
+      <input type="text" name="" id="" />
+
+      <br />
+      <label for="">Pan No</label> <br />
+      <input type="text" name="" id="" />
+
+      <br />
+      <label for="">Occupation</label> <br />
+      <input type="text" name="" id="" />
+
+      <br />
+      <label for="">Annual Salary</label> <br />
+      <input [(ngModel)]="salary" name="salary" #ctrl="ngModel" required />
+
+      <br />
+      <br />
+      <button class="btn" (click)="calculate()">Submit</button>
+    </form>
+    <h2 class="result">{{ resultString }}</h2>
+  </div>
+  <img class="img" src="../../assets/personal loan.svg" alt="" />
+</div>
